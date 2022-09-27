@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./app.js"
+    "start": "nodemon ./app.js",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,9 @@
     "koa-path-match": "^2.0.0",
     "koa-session": "^5.5.0",
     "koa-views": "^6.1.1",
-    "sequelize": "^4.13.8",
-    "sqlite3": "^3.1.13"
-  }
+    "sequelize": "^6.21.2",
+    "sqlite3": "^3.1.13",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
